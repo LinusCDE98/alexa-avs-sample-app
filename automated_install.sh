@@ -493,6 +493,10 @@ echo "========== Installing OpenSSL and Generating Self-Signed Certificates ====
 sudo apt-get install -y openssl
 sudo ldconfig
 
+echo "========== Installing WiringPI for wakeWordAgent =========="
+sudo apt-get install -y wiringpi
+sudo ldconfig
+
 echo "========== Downloading and Building Port Audio Library needed for Kitt-Ai Snowboy =========="
 cd $Kitt_Ai_Loc/snowboy/examples/C++
 bash ./install_portaudio.sh
